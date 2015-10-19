@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What Should You Be For Halloween?</title>
+	<script src='http://use.edgefonts.net/creepster.js'></script>
+	<link href='https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Styles/style.css">
+	<link rel="shortcut icon" href="Assets/favicon.ico">
+</head>
+<body>
+	<header class="videoHeader wrapper">
+		<video autoplay loop>
+			<source src="Assets/lightning/lightning.mov">
+		</video>
+		<h1>What Should You Be For Halloween 2015?</h1>
+		<img class ="hand hvr-float" src="Assets/hand.png" alt="hand icon to enter site">
+		<p>ENTER</p>
+	</header>
+
+<!-- QUESTIONS -->
+<div class="questionContainer wrapper" id="questionContainer">
+	<div class="timeQ" id="timeQuestion">
+		<h2>How much time do you have to work on your costume?</h2>
+		<form action="#" class="q1">
+			<ul>
+				<li><input type="radio" id="time1" name="time" value="10" required><label class="time1"for="time1">A day</label></li>
+				<li><input type="radio" id="time2" name="time" value="20" required><label class="time2" for="time2">A few hours</label></li>
+				<li><input type="radio" id="time3" name="time" value="40" required><label class="time1" for="time3">A few minutes</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div> <!-- timeQ -->
+
+	<div class="craftQ hide" id="craftQuestion">
+		<h2>Are you crafty?</h2>
+		<form action="#" class="q2">
+			<ul>
+				<li><input type="radio" id="craft1" name="craft" value="30" required><label class="time3" for="craft1">Nope</label></li>
+				<li><input type="radio" id="craft2" name="craft" value="20" required><label class="time2" for="craft2">Somewhat</label></li>
+				<li><input type="radio" id="craft3" name="craft" value="10" required><label class="time1" for="craft3">100%</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div> <!-- craftQ -->
+
+	<div class="sexyQ hide" id="sexyQuestion">
+		<h2>How risqué do you want to be?</h2>
+		<form action="#" class="q3">
+			<ul>
+				<li><input type="radio" id="sexy1" name="sexy" value="30" required><label class="time1" for="sexy1">Let's keep it PG</label></li>
+				<li><input type="radio" id="sexy2" name="sexy" value="20" required><label class="time3" for="sexy2">I don't mind offending</label></li>
+				<li><input type="radio" id="sexy3" name="sexy" value="60" required><label class="time1" for="sexy3">As risqué as possible</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div><!--  sexyQ -->
+
+	<div class="spookyQ hide" id="spookyQuestion">
+		<h2>How spooky do you want to be?</h2>
+		<form action="#" class="q4">
+			<ul>
+				<li><input type="radio" id="spooky1" name="spooky" value="30" required><label class="time2" for="spooky1">Not spooky at all</label></li>
+				<li><input type="radio" id="spooky2" name="spooky" value="20" required><label class="time1" for="spooky2">Medium spooky</label></li>
+				<li><input type="radio" id="spooky3" name="spooky" value="10" required><label class="time3" for="spooky3">The spookiest!</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div> <!-- spookyQ -->
+	
+	<div class="movieQ hide" id="movieQuestion">	
+		<h2>Which movie do you like best?</h2>
+		<form action="#" class="q5">
+			<ul>
+				<li><input type="radio" id="movie1" name="movie" value="30" required><label class="time1" for="movie1">Aladdin</label></li>
+				<li><input type="radio" id="movie2" name="movie" value="20" required><label class="time2" for="movie2">Pineapple Express</label></li>
+				<li><input type="radio" id="movie3" name="movie" value="10" required><label class="time1" for="movie3">Scream</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div> <!-- movieQ -->
+		
+	<div class="partyQ hide" id="partyQuestion">
+		<h2>What kind of party are you going to?</h2>
+		<form action="#" class="q6">
+			<ul>
+				<li><input type="radio" id="party1" name="party" value="30" required><label class="time3" for="party1">Office or child's party</label></li>
+				<li><input type="radio" id="party2" name="party" value="10" required><label class="time1" for="party2">House party</label></li>
+				<li><input type="radio" id="party3" name="party" value="20" required><label class="time2" for="party3">The club</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form" />
+		</form>
+	</div> <!-- partyQ -->
+		
+	<div class="groupQ hide" id="groupQuestion">	
+		<h2>How many people are part of your costume?</h2>
+		<form action="#" class="q7">
+			<ul>
+				<li><input type="radio" id="group1" name="group" value="0" required><label class="time2" for="group1">I'm going solo</label></li>
+				<li><input type="radio" id="group2" name="group" value="30" required><label class="time3" for="group2">My partner and I</label></li>
+				<li><input type="radio" id="group3" name="group" value="50" required><label class="time1" for="group3">My whole crew</label></li>
+			</ul>
+			<input type="image" src="Assets/submit-button.svg" class="submit" alt="Submit Form"/>
+		</form>
+	</div> <!-- groupQ -->
+
+
+<!-- ANSWERS -->
+<div class="answer hide" id="zombie">
+	<div class="zombieImage">
+		<img src="Assets/zombie.svg" alt="Zombie">
+	</div>
+	<div class="answer-description">
+		<h2>You should be a zombie</h2>
+		<p>Zombie is a classic costume for a reason. It's simple to put together but captures Halloween perfectly. All you need is some old clothes to rip up, fake blood and maybe some face paint. Add extra props and messy hair as desired.</p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be a zombie">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+
+
+<div class="answer hide" id="pizzaRat">
+	<div class="ratImage">
+		<img src="Assets/pizza-rat.svg" alt="pizzaRat">
+	</div>
+		<div class="answer-description">
+			<h2>You should be a pizza rat</h2>
+			<p>If you don't know what pizza rat is, your first task is to watch the <a href="https://www.youtube.com/watch?v=UPXUG8q4jKU">viral video in question</a>. This costume is a conversation starter, with the right mix of risqué and gross. Tip: make a fake pizza slice from paper and add to a rat costume.</p>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be a pizza rat">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+
+	
+<div class="answer hide" id="royalty">
+	<div class="royaltyImage">
+		<img src="Assets/royal.svg" alt="royalty">
+	</div>
+	<div class="answer-description">
+		<h2>You should be royalty</h2>
+		<p>Couples and singles alike can't go wrong with royalty, whether you mimic a real or fictional monarch. Start with a crown, which you can find at any costume store. Make it creepy with blood or zombie elements if you'd like. </p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be royal">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+</div>
+
+<div class="answer hide" id="nurse">
+	<div class="nurseImage">
+		<img src="Assets/nurses.svg" alt="nurses">
+	</div>
+	<div class="answer-description">
+		<h2>You should be a sexy nurse</h2>
+		<p>Dress up by yourself or put together a team. Make it as risqué as you want. Plus, if you're into gore, feel free to add some blood. Go to a department store to pick up some scrubs to get started.</p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be a sexy nurse">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+
+<div class="answer hide" id="tmnt">
+	<div class="turtle">
+		<img class= "turtle" src="Assets/turtle-man.svg" alt="turtle">
+	</div>	
+	<div class="answer-description">
+		<h2>You should be a Teenage Mutant Ninja Turtle</h2>
+		<p>A Teenage Mutant Ninja Turtle is the perfect costume for someone going solo, as a couple or in a group. Depending on your time and skill, try putting together your outfit yourself. Hint: start with green clothes and channel your inner turtle.</p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be a Teenage Mutant Ninja Turtle">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+
+<div class="answer hide" id="ghost">
+	<div class="ghostImage">
+		<img src="Assets/ghosty-ghost.svg" alt="ghost">
+	</div>
+	<div class="answer-description">
+		<h2>You should be a ghost!</h2>
+		<p>You don't seem to have much time to spend on your costume. Grab a sheet as quickly as you can, drape it over your head and spend Halloween as a classic ghost.</p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="What are you going to be for halloween? Take the quiz that told me to be a ghost">Tweet</a>
+	</div> <!-- description -->
+</div> <!-- answer -->
+
+</div> <!-- questionContainer -->
+
+<footer id="foot" class="hide">
+	<h4>Created By <a href="http://www.carysmills.com">Carys Mills</a> &amp; <a href="http://www.samanthacross.ca/">Samantha Cross</a></h4>
+</footer>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="JS/script.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</body>
+</html>
+
+<!-- credits
+
+Costume, bone "submit" buttons and tombstones designed by Nat Cooper (http://natcooper.com/).
+
+VIDEO BY MICHAEL RAIDEN. THIS VIDEO IS UNDER ATTRIBUTION LICENSE 3.0.
+CONTACT@MAZWAI.COM 
+
+House1 pic - werner22brigitte
+Brigitte Werner from pixabay.com
+
+Hand animation from:
+https://github.com/IanLunn/Hover/blob/master/css/hover.css
+
+Bone animation from animate.css
+https://daneden.github.io/animate.css/
+
+Pumpkin favicon from Jack o Lantern by GazillionDots from the Noun Project
+
+ -->

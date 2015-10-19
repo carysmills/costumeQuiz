@@ -1,0 +1,434 @@
+// GENERAL SETTINGS
+
+@import "setup";
+
+@mixin fontSize($fontSize) {
+	font-size: $fontSize *1px;
+	font-size: ($fontSize / 10) * 1rem;
+}
+.wrapper {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+a, a:active, a:focus {
+	outline: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.submit, .submit:active, .submit:focus {
+	outline: none;
+}
+
+// VIDEO
+header.videoHeader{
+	width: 100%;
+	position: relative;
+}
+video {
+	width: 100%;
+	opacity: 0.5;
+	transform: scaleX(-1);
+}
+
+// LANDING PAGE
+body {
+	width: 100%;
+	background: url("../Assets/house3.png") no-repeat center fixed;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	h1 {
+		position: absolute;
+		top: 2%;
+		left: 17%;
+		text-align: center;
+		width: 65%;
+		font-size: 4.5rem;
+		letter-spacing: .3rem;
+		line-height: 5rem;
+		font-family: 'Creepster', cursive;
+		color: #858B17;
+	}
+	.hand {
+		position: absolute;
+		top: 35%;
+		left: 39%;
+		max-height: 45%;
+		cursor: grab;
+	}
+}
+header {
+	p {
+		position: absolute;
+		bottom: 5%;
+		left: 18.5%;
+		text-align: center;
+		width: 65%;
+		font-size: 2.5rem;
+		letter-spacing: .3rem;
+		line-height: 5rem;
+		font-family: 'Creepster', cursive;
+		color: #858B17;
+		cursor: grab;
+	}
+}
+
+
+// QUESTIONS
+.timeQ, .craftQ, .sexyQ, .spookyQ, .movieQ, .partyQ, .groupQ {
+	margin-bottom: 10%;
+	padding-bottom: 10%;
+	position: relative;
+}
+h2 {
+	text-align: center;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 3rem;
+	text-shadow: 2px 2px #000;
+	color: #858B17;
+	position: relative;
+	padding: 40px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    li {
+    	width: 25%;
+    	padding: 35px;
+    }
+}
+label {
+   display: block;
+   padding: 86px 24%;
+   min-width: 150px;
+   height: 250px;
+   text-align: center;
+   margin: 5px 4px;
+   font-family: 'IM Fell DW Pica', serif;
+   font-style: italic;
+   color: #444444 ;
+   font-size: 2rem;
+   border-top-left-radius:1.5em;
+   border-top-right-radius:1.5em;
+   text-shadow: 1px 1px #727983 ;
+   background: url("../Assets/tombstone-02.svg");
+   background-size: cover;
+   cursor: grab;
+}
+.time1 {
+	background: url("../Assets/tombstone-01.svg")no-repeat;
+	background-size: 100%;
+}
+.time2 {
+	background: url("../Assets/tombstone-03.svg") no-repeat;
+	background-size: 100%;
+}
+.time3 {
+	background: url("../Assets/tombstone-02.svg")no-repeat;
+	background-size: 100%;
+}
+input[type="radio"]{ 
+  display: none;
+}
+input[type = "radio"]:checked + label {
+  color: #b25320;
+  transition: color 1s;
+}
+.questionContainer {
+	display: none;
+}
+.questionContainerShow {
+	display: block;
+}
+.submit:hover{
+	animation-name: jello;
+	transform-origin:center;
+	animation-duration: 1s;
+	animation-fill-mode:both;
+}
+
+//Buttons
+input.submit {
+	position: absolute;
+	bottom: 50px;
+	left: 33%;
+}
+.answer {
+	display: flex;
+}
+.hide {
+		display: none;
+}
+.show {
+	display: block;
+}
+.qShow {
+		display: flex;
+}
+.answer {
+		background: grey;
+		width: 80%;
+		opacity: 0.9;
+		margin: 15% auto;
+		font-family: 'IM Fell DW Pica', serif;
+		img {
+			width: 70%;
+			margin: 10% 5%;
+		}
+		p {
+			margin-right: 10%;
+			font-size: 1.25rem;
+			padding: 0;
+		}
+		a {
+			text-decoration: underline;
+		}
+		h2 {
+			margin:0;
+			margin-left: 10%;
+		}
+}
+
+.twitter-share-button {
+	margin-bottom: 5%;
+}
+
+footer {
+	background:#858B17;
+	padding: .5%;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'IM Fell DW Pica', serif;
+	h4 {
+		margin: 0 auto;
+	}
+}
+.showF {
+	display: flex;
+}
+
+// MEDIA QUERIES
+@media all and (max-width: 1100px) {
+	video {
+		visibility: hidden;
+	}
+	header {
+		p {
+			bottom:0%;
+		}
+		.hand {
+			top: 40%;
+		}
+	}
+}
+
+@media all and (max-width: 1003px) {
+	header {
+		height: 700px;
+	}
+	.hand {
+		height: 30%;
+		margin-top: 8%;
+	}
+	p {
+		margin-left: -2%;
+	}
+	label {
+		font-size: 1.4rem;
+	}
+}
+
+@media all and (max-width: 797px) {
+	header h1 {
+		width: 100%;
+		margin: 0;
+		padding-top: 5%;
+		left: 0;
+	}
+	.hand {
+		margin-top: 0%;
+		height: 40%;
+	}
+	p {
+		margin: 0;
+		margin-left: 25px;
+	}
+	.answer img{
+		width: 100%;
+	}
+
+	.twitter-share-button {
+	margin: 7%;
+}
+}
+
+@media all and (max-width: 660px) {
+	ul {
+		margin-left: -75px;
+		padding-bottom: 5%;
+	}
+	input {
+		margin-left: -75px;
+	}
+	header {
+		p{
+			font-size: 3.5rem;
+			margin-left: 50px;
+		}
+	}
+}
+@media all and (max-width: 600px){
+	header {
+		h1 {
+			font-size: 3rem;	
+		}
+		.hand {
+			height: 30%;
+			top: 55%;
+			left: 30%;
+		}
+		p {
+			left: 7%;
+		}
+	}
+	ul {
+		flex-direction: column;
+		margin: 0 10% 10% 10%;
+		li {
+			width: 90%;
+		}
+	}
+	label {
+		font-size: 1.6rem;
+	}
+	input {
+		margin-left: -120px;
+	}
+	.answer {
+		flex-direction: column;
+		img {
+			width: 90%;
+		}
+		h2 {
+			margin: 0 auto;
+		}
+	}
+	body{
+		background: url("../Assets/house3.png") repeat center fixed;
+	}
+}
+
+// ANIMATION
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+@-webkit-keyframes jello {
+ from, 11.1%, to {
+   -webkit-transform: none;
+   transform: none;
+ }
+
+ 22.2% {
+   -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+   transform: skewX(-12.5deg) skewY(-12.5deg);
+ }
+
+ 33.3% {
+   -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+   transform: skewX(6.25deg) skewY(6.25deg);
+ }
+
+ 44.4% {
+   -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+   transform: skewX(-3.125deg) skewY(-3.125deg);
+ }
+
+ 55.5% {
+   -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+   transform: skewX(1.5625deg) skewY(1.5625deg);
+ }
+
+ 66.6% {
+   -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+   transform: skewX(-0.78125deg) skewY(-0.78125deg);
+ }
+
+ 77.7% {
+   -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+   transform: skewX(0.390625deg) skewY(0.390625deg);
+ }
+
+ 88.8% {
+   -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+   transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+ }
+}
+
+@keyframes jello {
+ from, 11.1%, to {
+   -webkit-transform: none;
+   transform: none;
+ }
+
+ 22.2% {
+   -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+   transform: skewX(-12.5deg) skewY(-12.5deg);
+ }
+
+ 33.3% {
+   -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+   transform: skewX(6.25deg) skewY(6.25deg);
+ }
+
+ 44.4% {
+   -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+   transform: skewX(-3.125deg) skewY(-3.125deg);
+ }
+
+ 55.5% {
+   -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+   transform: skewX(1.5625deg) skewY(1.5625deg);
+ }
+
+ 66.6% {
+   -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+   transform: skewX(-0.78125deg) skewY(-0.78125deg);
+ }
+
+ 77.7% {
+   -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+   transform: skewX(0.390625deg) skewY(0.390625deg);
+ }
+
+ 88.8% {
+   -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+   transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+ }
+}
+
+
+
